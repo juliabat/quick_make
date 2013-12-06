@@ -5,7 +5,7 @@ function older_than {
 }
 
 function link {
-    echo "linking" 
+    echo "Linking" 
     gcc -o "$1" *.o
 }
 
@@ -21,9 +21,8 @@ fi
 
 for cfile in *.c; do
     objfile=${cfile%.*}.o
-        
     if [ ! -f "$objfile" ] || older_than "$objfile" "$cfile" ; then 
-        echo "compiling $cfile, creating new objectfile $objfile " 
+        echo "Compiling $cfile, creating new objectfile $objfile " 
         gcc -c -o $objfile $cfile || { echo "gcc error, exiting"; exit; }
         has_compiled=0  
     fi    
