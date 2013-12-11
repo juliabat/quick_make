@@ -3,4 +3,4 @@ Script for quickly compiling c-files in the current directory and linking the ob
 object file. 
 
 #### Usage
-     "./quickmake.sh name-of-program"
+     ./quickmake.sh name-of-program
