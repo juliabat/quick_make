@@ -20,7 +20,7 @@ if [ "$#" -ne 1  ]; then
     echo "Usage: $ $0 name-of-program" ; exit 
 fi
 
-if [ -z `ls *.c 2> /dev/null` ]; then 
+if [ -z "`ls *.c 2> /dev/null`" ]; then 
     echo "Current directory does not contain any c-files"; exit
 fi
 
